@@ -11,17 +11,28 @@ header, .for_fold {
 	width: 100%;
 	height: 150px;
 	background: #999999;
-	display: flex;
-	align-items: center;
+	padding: 60px 0;
+}
+.for_fold {
+	padding: 240px 0;
 }
 .container {
 	width: 1140px;
 	margin: 0 auto;
 }
-.center_block {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+.float_right {
+	float: right;
+}
+.float_left {
+	float: left;
+}
+.center_block p {
+	text-align: center;
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	top: 45%;
 }
 .for_fold {
 	height: 550px;
@@ -29,7 +40,8 @@ header, .for_fold {
 }
 .portfolio {
 	background: #ffaaaa;
-	padding-top: 20px;
+	padding: 20px;
+	padding-bottom: 0;
 }
 .portfolio h2 {
 	text-align: center;
@@ -38,9 +50,7 @@ header, .for_fold {
 	margin-bottom: 20px;
 }
 .p_img_wrap {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	display: table;
 }
 .p_img {
 	width: 515px;
@@ -48,18 +58,26 @@ header, .for_fold {
 	background: #808080;
 	margin-bottom: 50px;
 }
+.p_img p {
+	text-align: center;
+	margin-top: 20%;
+}
 .gallery {
 	width: 100%;
 	padding: 30px;
 	background: #808080;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	display: table;
 }
 .g_img {
-	width: 260px;
+	width: 22%;
 	height: 250px;
 	background: #cccccc;
+	float: left;
+	margin-right: 4%;
+	position: relative;
+}
+.g_img:last-child {
+	margin-right: 0;
 }
 .lot_of_text {
 	padding-top: 30px;
@@ -75,11 +93,15 @@ header, .for_fold {
 	background: #ffdd55;
 	padding: 100px 0;
 }
+.lot_block p {
+	text-align: center;
+}
 footer {
 	width: 100%;
 	background: #4d4d4d;
 }
 .footer_text {
+	text-align: center;
 	padding: 150px 0;
 	color: white;
 }
