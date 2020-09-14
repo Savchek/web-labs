@@ -5,6 +5,8 @@
 }
 
 body {
+	width: 980px;
+	margin: auto;
 	font-size: 16px;
 	color: #696969;
 }
@@ -114,6 +116,7 @@ header, .main-header, footer {
 .header-bg {
 	height: 380px;
 	background: #333 url('../images/background.jpg') no-repeat center;
+	background-size: cover;
 }
 
 .quote {
