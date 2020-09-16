@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page Title</title>
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+	<section class="wrap">
+		<section class="main">
+			<div class="form-header">
+				<img class="logo" src="./images/logo.JPG" alt="SHPPNG">
+				<div class="progress">
+					<span>Shopping Bag</span>
+					<span class="arrow"></span>
+					<span class="p-active">Checkout</span>
+					<span class="arrow p-active"></span>
+					<span>Confirmation</span>
+				</div>
+				<div class="cart-wrap">
+					<img src="./images/cart.svg" alt="Cart">
+					<span class="counter">1</span>
+				</div>
+			</div>
+
+			<form class="shopping-form" action="#" method="post" name="shopping-form">
+				<article class="left-column column">
+					<h3>Personal information</h3>
+
+					<div class="input-wrap short">
+						<label class="input-name">First Name</label>
+						<input class="input" type="text" name="first_name">
+					</div>
+
+					<div class="input-wrap short">
+						<label class="input-name">Last Name</label>
+						<input class="input" type="text" name="last_name">
+					</div>
+
+					<div class="input-wrap">
+						<label class="input-name">Email Adress</label>
+						<input class="input" type="email" name="email">
+					</div>
+
+					<div class="input-wrap">
+						<label class="input-name">Street</label>
+						<input class="input" type="text" name="street">
+					</div>
+
+					<div class="input-wrap short">
+						<label class="input-name">City</label>
+						<input class="input" type="text" name="city">
+					</div>
+
+					<div class="input-wrap short">
+						<label class="input-name">Country</label>
+						<select class="input" name="country">
+							<option value="fr">France</option>
+							<option value="ua">Ukraine</option>
+							<option value="ru">Russia</option>
+							<option value="us">USA</option>
+						</select>
+						<span class="select-arrow"></span>
+					</div>
+
+					<div class="input-wrap">
+						<label class="input-name">Phone number</label>
+						<input class="input phone" type="text" name="phone">
+						<span class="phone-prefix">+38</span>
+					</div>
+
+				</article>
+
+
+				<div class="column transp">
+					<article class="right-column column">
+						<h3>Delivery</h3>
+						<div class="input-wrap">
+							<label class="input-name">Delivery fee</label>
+							<div class="radios">
+								<input type="radio" name="fee" id="weeks" value="weeks">
+								<label class="fee-block" for="weeks">
+									<b>0<sup>$</sup></b>
+									<p>3-4 weeks</p>
+								</label>
+								<input type="radio" name="fee" id="days" value="days">
+								<label class="fee-block" for="days">
+									<b>5<sup>$</sup></b>
+									<p>2-5 days</p>
+								</label>
+							</div>
+							<p class="input-undertext">Estimated delivery date: <b>August 4th.</b><br>
+								Every packagge has a tracking number</p>
+						</div>
+					</article>
+
+					<div class="check-block">
+						<div class="check-line">
+							<input type="checkbox" id="subscribe" name="subscribe"><label class="checkbox-label"
+								for="subscribe">Subscribe to our
+								newsteller</label>
+						</div>
+						<div class="check-line">
+							<input type="checkbox" id="create_acc" name="create_acc"><label class="checkbox-label"
+								for="create_acc">Create an
+								account</label>
+						</div>
+					</div>
+
+					<button class="confirm">Confirm my order</button>
+				</div>
+			</form>
+		</section>
+	</section>
+
+</body>
+
+</html>
