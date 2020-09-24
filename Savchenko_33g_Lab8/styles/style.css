@@ -1,0 +1,100 @@
+:root {
+	--btn-size: 80px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button, button:focus, button:active{
+	border: none;
+	outline: none;
+}
+
+body {
+	font-family: sans-serif;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background: linear-gradient(135deg, rgb(129, 165, 211) 0%,rgb(40, 60, 94) 50%,rgb(2, 16, 41) 100%);
+}
+
+main {
+	height: calc(var(--btn-size) * 5);
+	width: calc(var(--btn-size) * 6);
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(135deg, rgb(92, 137, 195) 0%,rgb(11, 35, 76) 100%);
+	box-shadow: 30px 30px 70px 20px rgba(0,0,0,0.5);
+	transition: .5s;
+	transform: scale(0.99);
+}
+
+main:hover {
+	box-shadow: 40px 40px 90px 10px rgba(0,0,0,0.5);
+	transform: scale(1);
+}
+
+.str {
+	height: var(--btn-size);
+	width: calc(var(--btn-size) * 6);
+	background-color: rgba(255, 255, 255, 0.5);
+	text-align: right;
+	padding: 20px;
+	font-size: 28px;
+	box-shadow: inset 0px -7px 8px -2px #2b274f;
+	transition: .2s;
+	background: linear-gradient(165deg, rgba(255, 255, 255, 0.39) 0%,rgba(0, 0, 0, 0.24)100%);
+	color: white;
+	text-shadow: 0px 0px 4px #2a2650;
+	overflow: auto;
+}
+
+button {
+	height: var(--btn-size);
+	width: var(--btn-size);
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	font-size: 24px;
+	user-select: none;
+	color: #b7c4d6;
+	text-shadow: 0px 0px 10px #2a2650;
+	transition: .1s;
+	cursor: pointer;
+	box-shadow: inset 0px -9px 9px -2px #1c183f;
+}
+
+button:hover {
+	color: white;
+	text-shadow: 0px 0px 5px #2a2650;
+	box-shadow: inset 0px -5px 5px -2px #1c183f;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%,transparent 100%);
+	font-size: 26px;
+}
+
+button:active {
+	box-shadow: inset 0px -8px 11px 3px #1c183f;
+	background: linear-gradient(135deg, transparent 0%,rgba(0, 0, 0, 0.2) 100%);
+	font-size: 22px;
+}
+
+#clear {
+	background-color: #b57373;
+}
+
+#delete {
+	background-color: #2d79cb;
+}
+
+.wide {
+	width: calc(var(--btn-size)*2);
+}
+
+.num, button:hover.num {
+	background-color:rgba(55, 251, 168, 0.2);
+}
